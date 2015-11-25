@@ -590,21 +590,38 @@ h1 {
 }
 
 #bio {
+	background-size: cover;
+	background-attachment: fixed;
 	h1 {
 		font-size: 2.2rem;
 	}
 }
+
 .bio-1 {
-	background: url('../img/dude.jpg') top right no-repeat;
-	background-size: cover;
 	padding-top: 3rem;
-	color: #fff;
-	.third {
-		width: 40%;
-		padding: 2rem;
-		background: rgba(0,0,0, .4);
-		margin-left: -1rem;
-		padding-bottom: 10rem;
+	@media( min-width: $tablet ) {
+		background: url('../img/dude.jpg') top right no-repeat;
+		background-size: cover;
+		padding-top: 3rem;
+		color: #fff;
+		.third {
+			width: 40%;
+			padding: 2rem;
+			background: rgba(0,0,0, .4);
+			margin-left: -1rem;
+			padding-bottom: 10rem;
+		}
+	}
+	@media( max-width: $tablet ) {
+		background: $secondary;
+		.third {
+			width: auto;
+			float: none;
+			color: #fff;
+			padding: 1rem 2rem;
+			background: rgba(255,255,255, .4);
+			padding-top: 3rem;
+		}
 	}
 	.sig {
 		text-align: right;
@@ -617,11 +634,14 @@ h1 {
 }
 
 .bio-2 {
-	background: $secondary;
+	background: url('../img/bio.jpg') top center no-repeat;
+	background-attachment: fixed;
 	color: #fff;
 	padding: 3rem 3rem;
 	h1 {
-		max-width: 60%;
+		@media ( min-width: $tablet ) {
+			max-width: 60%;
+		}
 	}
 }
 
@@ -648,6 +668,11 @@ small {
 	text-align: center;
 	.plaque {
 		vertical-align: top;
+		@media ( max-width: $tablet ) {
+			width: 220px;
+			margin: 0 auto;
+			display: block;
+		}
 		> span {
 			background: url('../img/plaque.jpg') top center no-repeat;
 			background-size: 100% 100%;
@@ -700,6 +725,176 @@ small {
 			width: 20%;
 			padding-bottom: 16%;
 			z-index: 1;
+		}
+		@media ( max-width: $tablet ) {
+			&:nth-child(3) {
+				width: 52%;
+				margin: 0 -9.1%;
+				padding-bottom: 42%;
+			}
+		}
+	}
+}
+#bio {
+	.text {
+		h1 {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.fam-jpg {
+	float: right;
+	width: 40%;
+	padding-left: 2rem;
+}
+
+.excel-png {
+	float: left;
+	width: 25%;
+	padding-right: 2rem;
+}
+
+.serve-jpg {
+	float: left;
+	width: 50%;
+	padding-right: 2rem;
+	& + h1 {
+		display: inline-block;
+	}
+}
+
+.card-jpg {
+	float: right;
+	width: 50%;
+	padding-left: 2rem;
+	& + h1 {
+		display: inline-block;
+	}
+}
+
+@media ( max-width: $tablet ) {
+	.fam-jpg,
+	.excel-png,
+	.card-jpg,
+	.serve-jpg {
+		display: none;
+	}
+}
+
+#faq {
+	padding-top: 1rem;
+	font-size: .8rem;
+}
+
+h1 {
+	line-height: 1em;
+	padding-bottom: 2%;
+}
+
+.faq-1 {
+	padding: 3rem;
+	padding-top: 6rem;
+	background: url('../img/faq-1.jpg') top center no-repeat;
+	background-size: cover;
+	padding-bottom: 36%;
+	min-height: 100vh;
+	@media ( max-width: $tablet ) {
+		padding-bottom: 45rem;
+	}
+	h1 {
+		background-image: url('../img/blurred_line_dark.png');
+	}
+	@media ( min-width: $tablet ) {
+		.half:first-child {
+			padding-right: 2rem;
+			& + .half {
+				padding-left: 2rem;
+			}
+		}
+	}
+}
+
+.faq-2 {
+	padding: 3rem;
+	background: url('../img/faq-2.jpg') top center no-repeat;
+	background-size: cover;
+	h1 {
+		background-image: url('../img/blurred_line_dark.png');
+	}
+	> div {
+		max-width: 90%;
+		> div {
+			max-width: 80%;
+		}
+	}
+}
+
+.faq-3{
+	background: $secondary;
+	padding: 3rem;
+	color: #fff;
+	@media ( min-width: $tablet ) {
+		.half:first-child {
+			padding-right: 2rem;
+			& + .half {
+				padding-left: 2rem;
+			}
+		}
+	}
+}
+
+.faq-4 {
+	background: $tan;
+	h1 {
+		@media( min-width: $tablet ) {
+			max-width: 80%;
+			&.leading {
+				max-width: 50%;
+				padding-right: 2rem;
+			}
+		}
+		background-image: url('../img/blurred_line_dark.png');
+		&.leading {
+			margin-bottom: 0;
+		}
+	}
+	padding: 3rem;
+	padding-bottom: 0;
+}
+
+.faq-5 {
+	padding: 0;
+	.cont {
+		> div {
+			background: $tan;
+			padding: 1rem 3rem;
+			& + div {
+				background: $secondary;
+				color: #fff;
+				padding-bottom: 3rem;
+				.fine-print {
+					@extend .sansb;
+					font-size: .6em;
+				}
+			}
+		}
+	}
+	.td {
+		width: 50%;
+		&.second {
+			background: url('../img/tower.jpg') top center no-repeat;
+			background-size: cover;
+		} 
+	}
+
+	@media ( max-width: $tablet ) {
+		.td {
+			width: 100%;
+			display: block;
+			&.second {
+				padding-bottom: 100%;
+			}
 		}
 	}
 }

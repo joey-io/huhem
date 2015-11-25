@@ -67,6 +67,9 @@ html, body {
 		font-size: 14px;
 	}
 }
+body {
+	overflow-x: hidden;
+}
 
 body {
 	background: $primary;
@@ -271,6 +274,9 @@ a {
 		z-index: 2;
 		.spacer {
 			padding-bottom: 10%;
+			@media ( max-width: $tablet ) {
+				padding-bottom: 20%;
+			}
 		}
 	}
 } 
@@ -278,9 +284,18 @@ a {
 .home__blocks {
 	margin: 0 auto;
 	padding-bottom: 3rem;
+	@media ( max-width: $tablet ) {
+		background: $tan;
+		margin: 0 -1em;
+		padding-top: 1rem;
+	} 
 	li {
 		display: inline-block;
 		width: 32.8%;
+		@media ( max-width: $tablet ) {
+			display: block;
+			width: auto;
+		}
 		a {
 			width: 100%;
 			display: block;
@@ -290,15 +305,25 @@ a {
 			text-indent: -99999px;
 			padding-bottom: 40%;
 			position: relative;
+			@media ( max-width: $tablet ) {
+				margin-top: 2em;
+			}
 			&.book {
 				background-image: url('../img/dirt-rich.png');
 				padding-bottom: 65%;
 				right: -2rem;
+				@media ( max-width: $tablet ) {
+					right: -6%;
+				}
 			}
 			&.report {
 				background-image: url('../img/free-reports.png');
 				padding-bottom: 64%;
 				top: -4.3rem;
+				@media ( max-width: $tablet ) {
+					top: 0;
+					right: -5%;
+				}
 			}
 		}
 	}
@@ -311,6 +336,7 @@ a {
 	padding-top: 2rem; 
 	@media ( max-width: $tablet ) {
 		padding-top: 1rem;
+		width: 80%;
 	}
 }
 

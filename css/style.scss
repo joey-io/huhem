@@ -898,3 +898,107 @@ h1 {
 		}
 	}
 }
+
+
+
+#contact .container {
+	background: #fff;
+	padding: 0 3rem;
+}
+
+#contact {
+	padding-top: 3rem;
+	@media ( max-width: $tablet ) { 
+		padding-top: 1rem;
+	}
+	img.container {
+		width: 100%;
+		display: block;
+		padding: 0;
+	}
+	h1 {
+		font-size: 2em;
+		padding-bottom: 0;
+		background: transparent;
+	}
+
+	.half {
+		@extend .sansb;
+	}
+	@media ( min-width: $tablet ) {
+		.half {
+			padding-right: 3em;
+			& + .half {
+				padding-right: 0;
+				padding-left: 3em;
+				background: url('../img/cblur.jpg') center left no-repeat;
+				background-size: auto 100%;
+				p {
+					padding-bottom: 1em;
+				}
+			}
+		}
+	}
+	h4 {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+	img[src^="img/map"] {
+		padding-bottom: 2rem;
+	}
+
+	img[src^="img/copr"],
+	img[src^="img/farm"] {
+		float: right;
+		width: 28%;
+	}
+	form {
+		padding-bottom: 3rem;
+	}
+}
+
+
+form .table {
+	width: 100%;
+}
+form {
+	padding-bottom: 1rem;
+}
+
+input:not([type="submit"]):not([type="checkbox"]),
+textarea {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	margin-bottom: .45em;
+	border-radius: .45em;
+	padding: .25em;
+	-webkit-appearance: none;
+	border: 1px solid #333;
+}
+
+label {
+	color: #333;
+}
+
+textarea {
+	height: 6em;
+}
+
+input[type="submit"] {
+	background: $primary;
+	color: #fff;
+	font-size: 1em;
+	-webkit-appearance: none;
+	border: none;
+	@extend .sans;
+	font-weight: 100;
+	text-transform: uppercase;
+	padding: .25em 1em;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+textarea {
+	margin-top: 1rem;
+}

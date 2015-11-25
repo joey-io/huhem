@@ -62,10 +62,10 @@ body {
   display: block;
   clear: both; }
 
-.sans, #header {
+.sans, #header, input[type="submit"] {
   font-family: 'Oswald', sans-serif; }
 
-.sansb, #header ul li a[href^='tel'], #footer, .acc strong, .faq-5 .cont > div + div .fine-print {
+.sansb, #header ul li a[href^='tel'], #footer, .acc strong, .faq-5 .cont > div + div .fine-print, #contact .half {
   font-family: 'Roboto', sans-serif; }
 
 .serif, html, body {
@@ -768,5 +768,82 @@ h1 {
       display: block; }
       .faq-5 .td.second {
         padding-bottom: 100%; } }
+
+#contact .container {
+  background: #fff;
+  padding: 0 3rem; }
+
+#contact {
+  padding-top: 3rem; }
+  @media (max-width: 980px) {
+    #contact {
+      padding-top: 1rem; } }
+  #contact img.container {
+    width: 100%;
+    display: block;
+    padding: 0; }
+  #contact h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    background: transparent; }
+  @media (min-width: 980px) {
+    #contact .half {
+      padding-right: 3em; }
+      #contact .half + .half {
+        padding-right: 0;
+        padding-left: 3em;
+        background: url("../img/cblur.jpg") center left no-repeat;
+        background-size: auto 100%; }
+        #contact .half + .half p {
+          padding-bottom: 1em; } }
+  #contact h4 {
+    font-weight: 700;
+    text-decoration: underline; }
+  #contact img[src^="img/map"] {
+    padding-bottom: 2rem; }
+  #contact img[src^="img/copr"],
+  #contact img[src^="img/farm"] {
+    float: right;
+    width: 28%; }
+  #contact form {
+    padding-bottom: 3rem; }
+
+form .table {
+  width: 100%; }
+
+form {
+  padding-bottom: 1rem; }
+
+input:not([type="submit"]):not([type="checkbox"]),
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: .45em;
+  border-radius: .45em;
+  padding: .25em;
+  -webkit-appearance: none;
+  border: 1px solid #333; }
+
+label {
+  color: #333; }
+
+textarea {
+  height: 6em; }
+
+input[type="submit"] {
+  background: #9d7a3b;
+  color: #fff;
+  font-size: 1em;
+  -webkit-appearance: none;
+  border: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: .25em 1em;
+  margin-top: 1rem;
+  cursor: pointer; }
+
+textarea {
+  margin-top: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

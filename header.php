@@ -20,7 +20,7 @@
 			<li><a href="index.php">Dirt Rich</a></li>
 			<li><a href="index.php">FREE Reports</a></li>
 			<li><a href="faq.php">Get Answers</a></li>
-			<li><a href="index.php">Contact</a></li>
+			<li><a href="contact.php">Contact</a></li>
 			<li><a href="tel:1-800-555-1234">1-800-555-1234</a></li>
 			<li class="last"></li>
 		</ul>

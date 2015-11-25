@@ -15,7 +15,7 @@
 	<nav id="main-nav" class="container">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="index.php">Huhem Investments</a></li>
+			<li><a href="about.php">Huhem Investments</a></li>
 			<li><a href="index.php">Founder Mitch Huhem</a></li>
 			<li><a href="index.php">Dirt Rich</a></li>
 			<li><a href="index.php">FREE Reports</a></li>

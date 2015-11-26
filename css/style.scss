@@ -1059,5 +1059,37 @@ textarea {
 		background-size: cover;
 		padding-bottom: 7%;
 		width: 10rem;
+		border-radius: 10px;
+	}
+}
+label {
+	display: block;
+}
+
+#book.reports {
+	.container {
+		background-image: url('../img/rrbg.jpg');
+		@media ( max-width: $tablet ) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.third {
+		max-width: 50%;
+		padding: 3rem;
+		background: url('../img/rrb.png') center center no-repeat;
+		background-size: cover;
+		@media ( max-width: $tablet ) {
+			max-width: 400px;
+
+		}
+	}
+	.twothirds {
+		max-width: 50%;
+		float: left;
+		margin-left: -10px;
+		img {
+			padding-top: 4rem;
+		}
 	}
 }

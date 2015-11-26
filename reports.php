@@ -1,15 +1,14 @@
 <?php include 'header.php'; ?>
-<div id="book">
+<div id="book" class="reports">
 	<div class="container">
-		<img class="hi" src="img/bq.png" >
 			<div class="third">
-				<p><strong>Be one of the first 100 Accredited Investors and Get Your Limited Autographed Edition Now!</strong></p>
+				<img src="img/rh.png"><br/><br/>
+				<p><strong>Self-made multimillionaire and investment maverick Mitch Huhem shares with youthe “Holy Grail of Investments” – an asset coveted by the world’s ultra elite, yet all but unknown to average investors.</strong></p>
 				<form>
 					<input type="text" placeholder="*First Name">
 					<input type="text" placeholder="*Last Name">
 					<input type="text" placeholder="*Email">
 					<input type="text" placeholder="*Phone">
-					<center>
 					<label>Are you an "accredited investor?"</label>
 					<div class="table">
 						<div class="td">
@@ -28,15 +27,21 @@
 							</label>
 						</div>
 					</div>
-					</center>
+					<br/>
+					<label>Please select the report(s) you would like:</label>
+					<label>
+						<input type="checkbox"> 7 Biggest Mistakes Investors Make
+					</label>
+					<label>
+						<input type="checkbox"> Women & Investing
+					</label>
 					<center>
 					<input type="submit" value="Submit" class="continue">
 					</center>
 				</form>
 			</div>
 			<div class="twothirds">
-				<img src="img/dr.png">
-				<p><a href="#">Click Here</a> to learn about this soon-to-be National Best Seller and what inspired Mitch to write Dirt Rich.</p>	
+				<img src="img/rr.png">
 			</div>
 		<div class="clear"></div>
 	</div>

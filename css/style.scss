@@ -1002,3 +1002,62 @@ input[type="submit"] {
 textarea {
 	margin-top: 1rem;
 }
+
+
+#book {
+	padding-top: 3rem;
+	.third {
+		padding-top: 2rem;
+		max-width: 35%;
+		@media ( max-width: $tablet ) {
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto;
+			float: none;
+			padding-bottom: 4rem;
+		}
+	}
+	@media ( max-width: $tablet ) { 
+		padding-top: 1rem;
+	}
+	.container {
+		background: url('../img/bio.jpg') top center no-repeat;
+		background-size: cover;
+		padding: 0 3rem;
+		color: #fff;
+		@extend .sansb;
+	}
+	.hi {
+		display: block;
+		max-width: 80%;
+		margin: 0 auto;
+		padding-top: 2rem;
+		@media ( max-width: $tablet ) {
+			max-width: 99%;
+		}
+	}
+	.twothirds {
+		float: right;
+		margin-lefT: -2rem;
+		img {
+			max-width: 120%;
+		}
+		p {
+			padding-right: 30%;
+		}
+		@media ( max-width: $tablet ) {
+			display: none;
+		}
+	}
+	label {
+		color: #fff;
+	}
+	input[type="submit"] {
+		overflow: hidden;
+		text-indent: -99999px;
+		background: url('../img/continue.png') center center no-repeat;
+		background-size: cover;
+		padding-bottom: 7%;
+		width: 10rem;
+	}
+}
